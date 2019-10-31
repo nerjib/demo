@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/nerjib/demo#readme",
   "devDependencies": {
-    "coveralls": "^3.0.7"
+    "coveralls": "^3.0.7",
+    "jasmine": "^3.5.0"
+  },
+  "dependencies": {
+    "jasmine-node": "^3.0.0"
   }
 }
