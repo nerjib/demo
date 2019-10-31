@@ -5,6 +5,9 @@ module.exports = {
   plugins: [
     'import',
   ],
+rules:{
+  'linebreak-style': 0
+},
   env: {
     node: true,
   },
