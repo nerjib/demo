@@ -6,6 +6,6 @@ const app = require('./add.js/index.js.js');
 describe('Addition', function () {
   it('The function should add 2 numbers', function () {
     const value = app.AddNumber(5, 6);
-    expect(value).toBe(110);
+    expect(value).toBe(120);
   });
 });
