@@ -1,6 +1,6 @@
 /* eslint-disable prefer-arrow-callback */
 /* eslint-disable no-undef */
-const app = require('./add.js');
+const app = require('../index.js');
 
 // eslint-disable-next-line no-undef
 describe('Addition', function () {
