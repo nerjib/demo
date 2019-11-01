@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
-    "test": "./node_modules/.bin/jasmine-node spec"  },
-  },
+    "test": "./node_modules/.bin/jasmine-node spec"
+     },
+   
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nerjib/demo.git"
