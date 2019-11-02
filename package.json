@@ -6,9 +6,7 @@
   "scripts": {
     "lint": "eslint index.js",
     "test": "./node_modules/.bin/jasmine-node spec"
-     },
-   
-
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nerjib/demo.git"
@@ -25,6 +23,6 @@
   },
   "dependencies": {
     "jasmine-node": "^3.0.0",
-     "jshint": "^2.6.0"
+    "jshint": "^2.6.0"
   }
 }
