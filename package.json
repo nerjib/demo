@@ -6,10 +6,8 @@
   "scripts": {
     "lint": "./node_modules/.bin/jasmine-node spec",
     "test": "./node_modules/.bin/jasmine-node spec",
-    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
-     },
-   
-
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nerjib/demo.git"
@@ -22,10 +20,11 @@
   "homepage": "https://github.com/nerjib/demo#readme",
   "devDependencies": {
     "coveralls": "^3.0.7",
-    "jasmine": "^3.5.0"
+    "jasmine": "^3.5.0",
+    "jest": "^24.9.0"
   },
   "dependencies": {
     "jasmine-node": "^3.0.0",
-     "jshint": "^2.6.0"
+    "jshint": "^2.6.0"
   }
 }
