@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint '**/*.js'",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerjib/demo.git"
+  },
+
+    "scripts": {
+    "lint":  "eslint '**/*.js'",
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test1": "./node_modules/mocha/bin/mocha ./test/test*",
-    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./spec/*"
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/jasmine-node spec ./spec/*",
+     "lintb": "./node_modules/.bin/jasmine-node spec",
+    "testb": "./node_modules/.bin/jasmine-node spec",
+    "coverallsn": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
+
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,7 +26,6 @@
   "homepage": "https://github.com/nerjib/demo#readme",
   "devDependencies": {
     "coveralls": "^3.0.7",
-    "istanbul": "^0.4.5",
     "jasmine": "^3.5.0",
     "jest": "^24.9.0"
   },
